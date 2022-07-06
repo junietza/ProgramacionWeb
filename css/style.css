@@ -1,0 +1,124 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav{
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-menu{
+    background: black;
+    height: 50px;
+    width: 100%;
+
+    position: fixed;
+}
+
+.logo{
+    position: absolute;
+    color:aliceblue;
+    font-size: 30px;
+    top:8px;
+    left:5%
+}
+
+.navbar-menu ul{
+    float: right;
+    margin-right: 20px;
+    list-style: none;
+}
+
+.navbar-options li{
+    display: inline-block;
+    line-height: 50px;
+    margin:0 5px;
+}
+
+.navbar-options a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size:20px ;
+    padding: 5px 10px;
+    position: relative;
+
+    border-radius: 3px;
+}
+
+a:focus, a:hover{
+    background: #387acf;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 25px;
+    float: right;
+    color: aliceblue;
+    line-height: 50px;
+    margin-right: 25px;
+    cursor: pointer;
+
+    display: none;
+}
+
+#check{
+    display: none;
+}
+/*Para escritorio*/
+@media(max-width:1024px){
+    .logo{
+        padding-left: 40px;
+    }
+    .navbar-options li a{
+        font-size: 16px;
+        padding: 7px 10px;
+    }
+}
+
+/*Para tablets*/
+@media(max-width: 768px){
+    .checkbtn{
+        display: block;
+    }
+
+    .navbar-options{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #21427f;
+        left: -100%;
+        top:50px;
+        text-align: center;
+
+        transition: all .5s;
+    }
+
+    .navbar-options li{
+        display: block;
+        border-bottom: 1px solid white; 
+        z-index: 1;
+    }
+
+    .navbar-options li a{
+        font-size: 18px;
+    }
+
+    .navbar-menu li:hover{
+        background-color: #EEEAEA;
+
+    }
+
+    .navbar-menu a:hover{
+        color: black;
+    }
+
+    #check:checked ~ ul{
+        left:0;
+    }
+
+}
