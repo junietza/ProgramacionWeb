@@ -100,6 +100,33 @@ section{
     margin-top: 10px;
     border:3px solid black;
 }
+.about{
+    height:97vh;
+    position: relative;
+    background: #e07205;
+}
+.about-content{
+    width: 100%;
+    hyphens: 100%;
+    padding: 30px 0;
+    text-align: center;
+}
+.about-content h2{
+    font-size: 45px;
+    text-transform: uppercase;
+}
+.about-content p, .about-content h2{
+    padding: 10px 50px;
+}
+.about-img{
+    width: 100%;
+}
+
+.img-job{
+    width: 280px;
+    height: 280px;
+    display: block;
+}
 /*Para escritorio*/
 @media(max-width:1024px){
     .logo{
@@ -170,5 +197,6 @@ section{
         font-size: 14px;
         width: 60px;
     }
+
 
 }
