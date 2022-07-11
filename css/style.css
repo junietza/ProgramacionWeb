@@ -136,6 +136,45 @@ section{
     margin-right: auto;
     padding-bottom: 15px;
 }
+.testimonios{
+    height:100vh ;
+    position:relative;
+    background: url(../img/Colorful-background.png);
+    background-size: cover;
+    background-attachment: relative;
+    color: black;
+}
+.testimonios-content{
+    width: 100%;
+    height: 100%;
+
+    padding: 30px 0;
+    text-align: center;
+}
+.testimonios-content h2{
+    font-size: 45px;
+    text-transform: uppercase;
+}
+.testimonios-content p, .testimonios-content h2{
+    padding: 10px 50px;
+}
+.testimonios-group{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding: 0 50px;
+}
+.testimonio-card{
+    width: 33%;
+    float: left;
+}
+.img-perfil{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
 /*Para escritorio*/
 @media(max-width:1024px){
     .logo{
@@ -157,6 +196,13 @@ section{
     .img-job{
         width: 210px;
         height: 210px;
+    }
+    .testimonio-card{
+        font-size: 13px;
+    }
+    .img-perfil{
+        width: 150px;
+        height: 150px;
     }
 }
 
@@ -213,7 +259,7 @@ section{
         font-size: 14px;
         width: 60px;
     }
-    .about{
+    .about, .testimonios{
         height: 165vh;
     }
     .about-content h2{
@@ -222,6 +268,10 @@ section{
     .about-imgx{
         width: 100%;
         margin-bottom: 20px;
+    }
+    .testimonio-card{
+        width: 100%;
+        margin-bottom:20px ;
     }
 
 
