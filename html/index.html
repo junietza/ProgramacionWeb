@@ -26,15 +26,15 @@
         <label class="logo">WebCat</label>
         <ul class="navbar-options">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Cliente</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#nosotros">Servicios</a></li>
+          <li><a href="#clientes">Cliente</a></li>
+          <li><a href="#contactos">Contacto</a></li>
         </ul>
       </nav>
     </header>
     <main>
 
-      <section class="banner">
+      <section class="banner" id="banner">
         <div class="banner-content">
           <img src="/img/gato.png" alt="img-banner" />
           <div class="banner-text">
@@ -49,7 +49,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="nosotros">
         <div class="about-content">
           <h2>Nuestros trabajos</h2>
           <p>
@@ -74,7 +74,7 @@
           </div>
       </section>
 
-      <section class="testimonios">
+      <section class="testimonios" id="clientes">
             <div class="testimonios-content">
               <h2>Clientes</h2>
               <p>Nuestros clientes nos respaldan</p>
@@ -111,7 +111,7 @@
             </div>
       </section>
 
-      <section class="contacto">
+      <section class="contacto" id="contactos">
         <div class="contacto-content">
             <h2>Contactos</h2>
             <p>
@@ -128,17 +128,28 @@
                   <textarea rows="5" class="form-control"></textarea>
                   <input type="submit" class="send-btn">
               </form>
-            </div>
-            <div class="contacto-img">
-              <img src="/img/contact-us" alt="">
+              <div class="contacto-img">
+                <img src="/img/contact-us" alt="">
+              </div>
             </div>
         </div>
-
-      </section>
-        
-      
-      
+      </section> 
     </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="social">
+          <label><a href="#"><i class="fa-brands fa-facebook"></i></a></label>
+          <label><a href="#"><i class="fa-brands fa-instagram"></i></a></label>
+          <label><a href="#"><i class="fa-brands fa-twitter"></i></a></label>
+          <label><a href="#"><i class="fa-brands fa-google"></i></a></label>
+     
+        </div>
+        <div class="copr">
+          <p>Design Cat Plataforma Online &copy;2020.Todos los derechos reservados </p>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://kit.fontawesome.com/8b4db8676f.js"
       crossorigin="anonymous"

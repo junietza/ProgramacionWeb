@@ -230,9 +230,39 @@ section{
     float: left;
 }
 .contacto-img img{
-    width: 85%;
+    width: 80%;
     display: block;
     margin: auto;
+}
+footer{
+    position: relative;
+}
+.footer{
+    height: 10vh;
+    background: #e07205;
+
+}
+.social{
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+}
+.social label a{
+    color:black;
+}
+.social label i{
+    font-size: 25px;
+    padding: 0 10px;
+}
+.social label i:hover{
+    color: white;
+}
+.corp{
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+    text-align: left;
 }
 
 /*Para escritorio*/
@@ -271,6 +301,20 @@ section{
     }
     .send-btn{
         font-size: 0.8rem;
+    }
+    .footer{
+        height: 15vh;
+    }
+    .social{
+        width: 100%;
+    }
+    .social label i{
+        font-size: 25px;
+    }
+    .corp{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
     }
 }
 
@@ -350,7 +394,10 @@ section{
         margin-right: auto;
         width:77%
     }
-
+    .corp{
+        font-size: 14px;
+        text-align: center;
+    }
 
 
 }
